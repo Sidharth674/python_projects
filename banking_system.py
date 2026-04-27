@@ -1,3 +1,11 @@
+import os
+if not os.path.exists("balance.txt"):
+    with open("balance.txt" , "w")as f:
+        f.write("0")
+if not os.path.exists("banking_system.txt"):
+    with open("banking_system.txt" , "w") as f:
+        pass
+
 class Account:
     def __init__(self , balance , acc_no):
         self.balance = balance
